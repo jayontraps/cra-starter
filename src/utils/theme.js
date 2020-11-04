@@ -1,7 +1,9 @@
-import { blue, neutral, yellow, red, green } from "./colors";
+import { withTheme } from "styled-components";
+import {  blue, neutral, yellow, red, green } from "./colors";
 import { primaryFont } from "./typography";
 
 export const defaultTheme = {
+  mainBackgroundColor: neutral[100],
   primaryColor: blue[300],
   primaryHoverColor: blue[200],
   primaryActiveColor: blue[100],
@@ -27,6 +29,7 @@ export const defaultTheme = {
 };
 
 export const darkTheme = {
+  mainBackgroundColor: neutral[100],
   primaryColor: neutral[100],
   primaryHoverColor: neutral[200],
   primaryActiveColor: neutral[300],
